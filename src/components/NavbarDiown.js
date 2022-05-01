@@ -60,17 +60,17 @@ function NavbarDiown() {
                 <ul className="navbar-nav mr-auto">
                   <li className="nav-item">
                     <Link className="nav-link" to="/home">
-                      manage User.
+                      User Management
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="/event">
-                      Events
+                      Event
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="/petition">
-                      petition
+                      Petition
                     </Link>
                   </li>
                   <li className="nav-item">

@@ -82,7 +82,7 @@ function Petition() {
             >
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Search.."
                 className=""
                 aria-label="Search"
                 onChange={(e) => setSearch(e.target.value)}
@@ -95,7 +95,7 @@ function Petition() {
                 <th>Number</th>
                 <th>Topic</th>
                 <th>Date</th>
-                <th>action</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -123,7 +123,7 @@ function Petition() {
                         id={e._id}
                         onClick={(e) => clickHandler(e, i)}
                       >
-                        detail
+                        Detail
                       </Button>
                       <Button
                         variant="outline-danger mb-1"
@@ -157,7 +157,7 @@ function Petition() {
                       </Modal.Body>
                       <Modal.Footer>
                         <Button variant="danger" onClick={hideModal}>
-                          close
+                          Close
                         </Button>
                       </Modal.Footer>
                     </Modal>
@@ -179,7 +179,7 @@ function Petition() {
                       </Modal.Body>
                       <Modal.Footer>
                         <Button variant="primary" onClick={hideModal2}>
-                          close
+                          Close
                         </Button>
                         <Button
                           variant="danger"

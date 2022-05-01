@@ -92,10 +92,10 @@ function Event() {
         <div className="p-5">
           <div className="d-flex flex-row justify-content-between">
             <div className="">
-              <h1>Events</h1>
+              <h1>Event</h1>
             </div>
             <div className=" justify-content-end">
-              <Button onClick={goAddEvent}>add event</Button>
+              <Button onClick={goAddEvent}>Add Event</Button>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ function Event() {
             >
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Search.."
                 className=""
                 aria-label="Search"
                 onChange={(e) => setSearch(e.target.value)}
@@ -120,12 +120,12 @@ function Event() {
               <tr>
                 <th>Number</th>
                 <th>Marker_name</th>
-                <th>latitude</th>
-                <th>longitude</th>
-                <th>start_date</th>
-                <th>end_date</th>
-                <th>topic</th>
-                <th>action</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Topic</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -185,7 +185,7 @@ function Event() {
                           id={e._id}
                           onClick={(e) => clickHandler(e, i)}
                         >
-                          detail
+                          Detail
                         </Button>
                         <Button
                           variant="outline-danger mb-1"
@@ -308,7 +308,7 @@ function Event() {
                             variant="danger"
                             onClick={() => deleteEventPin(i, e._id)}
                           >
-                            delete
+                            Delete
                           </Button>
                         </Modal.Footer>
                       </Modal>

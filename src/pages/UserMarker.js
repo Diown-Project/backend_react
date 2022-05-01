@@ -74,7 +74,7 @@ function UserMarker() {
         <div className="p-5">
           <Row>
             <Col>
-              <h1>user_marker</h1>
+              <h1>User marker</h1>
             </Col>
             <Col
               lg={{ span: 3, offset: 9 }}
@@ -84,7 +84,7 @@ function UserMarker() {
             >
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Search.."
                 className=""
                 aria-label="Search"
                 onChange={(e) => setSearch(e.target.value)}
@@ -96,11 +96,11 @@ function UserMarker() {
             <thead className="text-center bg-dark text-light">
               <tr>
                 <th>Number</th>
-                <th>marker_name</th>
-                <th>latitude</th>
-                <th>longitude</th>
-                <th>create_by</th>
-                <th>action</th>
+                <th>Marker name</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Create by</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -140,7 +140,7 @@ function UserMarker() {
                         id={e._id}
                         onClick={(e) => clickHandler(e, i)}
                       >
-                        detail
+                        Detail
                       </Button>
                       <Button
                         variant="outline-danger mb-1"
@@ -152,7 +152,7 @@ function UserMarker() {
                         ) : (
                           <></>
                         )}
-                        <span>delete</span>
+                        <span>Delete</span>
                       </Button>
                     </td>
                     <Modal
@@ -173,7 +173,7 @@ function UserMarker() {
                       </Modal.Body>
                       <Modal.Footer>
                         <Button variant="danger" onClick={hideModal}>
-                          close
+                          Close
                         </Button>
                       </Modal.Footer>
                     </Modal>
@@ -195,7 +195,7 @@ function UserMarker() {
                       </Modal.Body>
                       <Modal.Footer>
                         <Button variant="primary" onClick={hideModal2}>
-                          close
+                          Close
                         </Button>
                         <Button
                           variant="danger"

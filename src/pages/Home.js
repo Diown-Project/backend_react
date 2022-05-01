@@ -108,7 +108,7 @@ function Home() {
         <div className="p-5">
           <Row>
             <Col>
-              <h1>User management</h1>
+              <h1>User Management</h1>
             </Col>
             <Col
               lg={{ span: 3, offset: 9 }}
@@ -118,7 +118,7 @@ function Home() {
             >
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Search.."
                 className=""
                 aria-label="Search"
                 onChange={(e) => setSearch(e.target.value)}
@@ -130,11 +130,11 @@ function Home() {
             <thead className="text-center bg-dark text-light">
               <tr>
                 <th>Number</th>
-                <th>username</th>
-                <th>email</th>
-                <th>following</th>
-                <th>follower</th>
-                <th>action</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Following</th>
+                <th>Follower</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -168,7 +168,7 @@ function Home() {
                           id={e._id}
                           onClick={(e) => clickHandler(e, i)}
                         >
-                          detail
+                          Detail
                         </Button>
                         <Button
                           variant="outline-danger mb-1"
@@ -286,7 +286,7 @@ function Home() {
                             variant="danger"
                             onClick={() => deleteUser(i, e._id)}
                           >
-                            delete
+                            Delete
                           </Button>
                         </Modal.Footer>
                       </Modal>
